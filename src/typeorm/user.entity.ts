@@ -28,6 +28,13 @@ export class User {
   email: string;
 
   @Column({
+    name: 'second_email',
+    nullable: false,
+    default: '',
+  })
+  email2: string;
+
+  @Column({
     nullable: false,
     default: '',
   })

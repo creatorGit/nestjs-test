@@ -20,6 +20,6 @@ export class UsersService {
   }
 
   findUsersById(id: number) {
-    return this.userRepository.findOne(id);
+    return this.userRepository.findOneBy({id: id});
   }
 }
